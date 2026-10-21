@@ -57,7 +57,7 @@
 </section>
 <section class="section projects" id="projects">
   <div class="section-kicker">03 / FEATURED PROJECTS</div>
-  <div class="section-head project-section-head"><h2>Real problems.<br><em>Built into real workflows.</em></h2><p>Three projects that show how I approach product problems, engineering constraints, collaboration and iteration.</p></div>
+  <div class="section-head project-section-head"><h2>Real problems.<br><em>Built into real workflows.</em></h2><p>Full-stack products, backend systems and collaborative builds, with the problem, implementation, technology and live/source links for each.</p></div>
 
   <article class="project-showcase featured-project tilt" tabindex="0">
     <div class="project-visual project-visual-agro">
@@ -102,9 +102,100 @@
     </article>
 
     <article class="project-card-enhanced glass-card tilt" tabindex="0">
-      <div class="project-card-visual tata-visual" aria-hidden="true"><span>03</span><div class="tata-mark">1mg</div><div class="tata-flow"><i></i><i></i><i></i><i></i></div><b>KALVIUM</b><small>COLLABORATIVE PROJECT</small></div>
+      <div class="project-card-visual bus-visual" aria-hidden="true"><span>03 / INDIVIDUAL FULL-STACK BUILD</span><div class="project-symbol">HB</div><b>Heaven-Bus</b><small>REAL-TIME BUS BOOKING</small></div>
       <div class="project-card-body">
-        <div class="project-top"><span>TEAM PROJECT</span><span>03</span></div>
+        <div class="project-top"><span>INDIVIDUAL FULL-STACK BUILD</span><span>03</span></div>
+        <h3>Heaven-Bus</h3>
+        <p class="project-intro">A real-time bus-booking system built around seat contention: several passengers may try to reserve the same seat while abandoned holds must expire safely.</p>
+        <div class="project-details stacked"><section><small>PROBLEM / CONTEXT</small><p>Seat selection, payment callbacks and hold expiry can race, creating double bookings or seats stuck unavailable.</p></section><section><small>IMPLEMENTATION</small><p>Implemented five-minute seat holds with MongoDB transactions, payment verification and compensating refund handling. Ask Jarvis combines route search with issue-specific support contacts; Ollama provides free-form answers in local development while critical booking facts stay deterministic.</p></section></div>
+        <div class="feature-list"><small>KEY FEATURES</small><ul><li>Seat search, live seat map and timed holds</li><li>Race-safe booking and payment/refund handling</li><li>Passenger journey tracking and admin trip/refund controls</li><li>Ask Jarvis for trip discovery and relevant support numbers</li></ul></div>
+        <div class="compact-meta"><div><small>TECHNOLOGY</small><div class="tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.IO</span><span>Ollama</span><span>Vitest</span><span>Playwright</span></div></div><div><small>MY ROLE / PROJECT CONTEXT</small><p>Individual project build.</p><small class="learn-label">ENGINEERING TAKEAWAY</small><p>Booking workflows need clear ownership of inventory state and recovery paths for expiry, duplicate payments and concurrent requests.</p></div></div>
+        <div class="project-actions"><a class="project-btn project-btn-primary" href="https://heaven-bus-web.onrender.com/" target="_blank" rel="noreferrer">Live site <b>↗</b></a><a class="project-btn project-btn-secondary" href="https://github.com/charanteja7725/Heaven-Bus" target="_blank" rel="noreferrer">GitHub repository <b>↗</b></a></div>
+      </div>
+    </article>
+
+    <article class="project-card-enhanced glass-card tilt" tabindex="0">
+      <div class="project-card-visual lead-visual" aria-hidden="true"><span>04 / INDIVIDUAL AI-ASSISTED PRODUCT</span><div class="project-symbol">LP</div><b>LeadPilot</b><small>AI SALES OUTREACH ASSISTANT</small></div>
+      <div class="project-card-body">
+        <div class="project-top"><span>INDIVIDUAL AI-ASSISTED PRODUCT</span><span>04</span></div>
+        <h3>LeadPilot</h3>
+        <p class="project-intro">A human-reviewed outreach workflow that turns user-provided B2B lead facts into a fit assessment, one initial email and two follow-ups.</p>
+        <div class="project-details stacked"><section><small>PROBLEM / CONTEXT</small><p>Writing tailored outreach takes repeated research and drafting, while unsupported claims or automatic sending can create risk.</p></section><section><small>IMPLEMENTATION</small><p>Built a Gemini API flow with structured JSON output, independent Zod validation, bounded inputs and clear provider error handling. Users can review and edit drafts; the product does not send emails automatically.</p></section></div>
+        <div class="feature-list"><small>KEY FEATURES</small><ul><li>Lead brief, tone and goal inputs with validation</li><li>Fit estimate, reasons and questions for missing details</li><li>Editable email and follow-up drafts with copy/export</li><li>Provider-stubbed backend tests; live site link</li></ul></div>
+        <div class="compact-meta"><div><small>TECHNOLOGY</small><div class="tags"><span>React</span><span>TypeScript</span><span>Vite</span><span>Node.js</span><span>Gemini API</span><span>Zod</span><span>Vitest</span></div></div><div><small>MY ROLE / PROJECT CONTEXT</small><p>Individual project build.</p><small class="learn-label">ENGINEERING TAKEAWAY</small><p>AI output is more useful when it is constrained, validated and reviewed by a person before use.</p></div></div>
+        <div class="project-actions"><a class="project-btn project-btn-primary" href="https://leadpilot-mauve.vercel.app/" target="_blank" rel="noreferrer">Live site <b>↗</b></a><a class="project-btn project-btn-secondary" href="https://github.com/charanteja7725/LeadPilot-s" target="_blank" rel="noreferrer">GitHub repository <b>↗</b></a></div>
+      </div>
+    </article>
+
+    <article class="project-card-enhanced glass-card tilt" tabindex="0">
+      <div class="project-card-visual ward-visual" aria-hidden="true"><span>05 / HEALTHCARE OPERATIONS · FLUTTER + FIREBASE</span><div class="project-symbol">WC</div><b>WardClean</b><small>HOUSEKEEPING TASKS &amp; COMPLIANCE</small></div>
+      <div class="project-card-body">
+        <div class="project-top"><span>HEALTHCARE OPERATIONS · FLUTTER + FIREBASE</span><span>05</span></div>
+        <h3>WardClean</h3>
+        <p class="project-intro">A hospital housekeeping MVP that replaces verbal assignments and manual compliance tracking with shared task records and real-time updates.</p>
+        <div class="project-details stacked"><section><small>PROBLEM / CONTEXT</small><p>Supervisors need to see which ward tasks are pending, in progress, overdue or blocked, while employees need a clear way to report issues.</p></section><section><small>IMPLEMENTATION</small><p>Built employee and supervisor workflows with Firebase Authentication, Firestore listeners and photo uploads through Firebase Storage.</p></section></div>
+        <div class="feature-list"><small>KEY FEATURES</small><ul><li>Assign and track tasks by ward, room, employee and due time</li><li>Employee start/complete flow with notes and photos</li><li>Report and resolve issues with recurring-area alerts</li><li>Daily compliance summaries and historical records</li></ul></div>
+        <div class="compact-meta"><div><small>TECHNOLOGY</small><div class="tags"><span>Flutter</span><span>Dart</span><span>Firebase Auth</span><span>Cloud Firestore</span><span>Firebase Storage</span></div></div><div><small>MY ROLE / PROJECT CONTEXT</small><p>Course/community project; linked source is maintained in the Kalvium community repository.</p><small class="learn-label">ENGINEERING TAKEAWAY</small><p>A useful operations tool needs secure role boundaries and a traceable record of task completion and issue resolution.</p></div></div>
+        <div class="project-actions"><a class="project-btn project-btn-primary" href="https://ward-clean-54a66.web.app/" target="_blank" rel="noreferrer">Live site <b>↗</b></a><a class="project-btn project-btn-secondary" href="https://github.com/kalviumcommunity/Housekeeping-Task-Manager-kalvium_community" target="_blank" rel="noreferrer">GitHub repository <b>↗</b></a></div>
+      </div>
+    </article>
+
+    <article class="project-card-enhanced glass-card tilt" tabindex="0">
+      <div class="project-card-visual skill-visual" aria-hidden="true"><span>06 / COLLABORATIVE LEARNING PLATFORM</span><div class="project-symbol">SX</div><b>SkillXchange</b><small>PEER-TO-PEER SKILL SHARING</small></div>
+      <div class="project-card-body">
+        <div class="project-top"><span>COLLABORATIVE LEARNING PLATFORM</span><span>06</span></div>
+        <h3>SkillXchange</h3>
+        <p class="project-intro">A real-time learning and mentorship platform for pairing learners, sharing study sessions and working through material together.</p>
+        <div class="project-details stacked"><section><small>PROBLEM / CONTEXT</small><p>Peer learning often lacks a shared place for live discussion, collaborative practice and a structured path through a new topic.</p></section><section><small>IMPLEMENTATION</small><p>The project combines live video sessions and a shared whiteboard with AI-assisted tutoring, document analysis, learning roadmaps and peer study groups.</p></section></div>
+        <div class="feature-list"><small>KEY FEATURES</small><ul><li>WebRTC video calls and collaborative canvas</li><li>AI tutoring with document analysis</li><li>Dynamic learning roadmaps and peer study groups</li><li>Gamified reputation and progress tracking</li></ul></div>
+        <div class="compact-meta"><div><small>TECHNOLOGY</small><div class="tags"><span>React</span><span>Vite</span><span>Node.js</span><span>Express</span><span>WebRTC</span><span>AI integrations</span></div></div><div><small>MY ROLE / PROJECT CONTEXT</small><p>Collaborative project; repository and live deployment are linked.</p><small class="learn-label">ENGINEERING TAKEAWAY</small><p>A learning product can connect real-time collaboration with structured guidance rather than treating lessons as isolated content.</p></div></div>
+        <div class="project-actions"><a class="project-btn project-btn-primary" href="https://skillxchange-cp.vercel.app/" target="_blank" rel="noreferrer">Live site <b>↗</b></a><a class="project-btn project-btn-secondary" href="https://github.com/cherukuriyogini/SKILLXCHANGE-CP" target="_blank" rel="noreferrer">GitHub repository <b>↗</b></a></div>
+      </div>
+    </article>
+
+    <article class="project-card-enhanced glass-card tilt" tabindex="0">
+      <div class="project-card-visual wishlist-visual" aria-hidden="true"><span>07 / TEAM E-COMMERCE PROJECT</span><div class="project-symbol">WL</div><b>Flipkart Smart Wishlist</b><small>WISHLIST, STOCK &amp; CHECKOUT</small></div>
+      <div class="project-card-body">
+        <div class="project-top"><span>TEAM E-COMMERCE PROJECT</span><span>07</span></div>
+        <h3>Flipkart Smart Wishlist</h3>
+        <p class="project-intro">A collaborative e-commerce build focused on keeping wishlist availability accurate and carrying products through cart and order flows.</p>
+        <div class="project-details stacked"><section><small>PROBLEM / CONTEXT</small><p>Wishlist products may go out of stock between browsing and checkout, and cart updates should stay consistent with server inventory.</p></section><section><small>IMPLEMENTATION</small><p>Implemented stock synchronization and optimistic wishlist-to-cart behavior with transactional stock checks and rollback on failure.</p></section></div>
+        <div class="feature-list"><small>KEY FEATURES</small><ul><li>Availability polling for wishlisted products</li><li>Optimistic move-to-cart with rollback on stock conflicts</li><li>Transactional checkout, cart clearing and order creation</li><li>Search, sorting, pagination and admin inventory workflows</li></ul></div>
+        <div class="compact-meta"><div><small>TECHNOLOGY</small><div class="tags"><span>Next.js 14</span><span>PostgreSQL</span><span>Prisma</span><span>NextAuth.js</span><span>Vitest</span><span>Tailwind CSS</span></div></div><div><small>MY ROLE / PROJECT CONTEXT</small><p>Collaborative Kalvium project; source is in the community repository.</p><small class="learn-label">ENGINEERING TAKEAWAY</small><p>Optimistic interfaces still need a server-side transaction and a reliable way to restore state when stock changes.</p></div></div>
+        <div class="project-actions"><a class="project-btn project-btn-secondary" href="https://github.com/kalviumcommunity/FLIPKART-WISHLIST_kalvium-community" target="_blank" rel="noreferrer">GitHub repository <b>↗</b></a></div>
+      </div>
+    </article>
+
+    <article class="project-card-enhanced glass-card tilt" tabindex="0">
+      <div class="project-card-visual food-visual" aria-hidden="true"><span>08 / FULL-STACK COMMUNITY MARKETPLACE</span><div class="project-symbol">FD</div><b>Food Donation</b><small>DONOR-TO-RECIPIENT MATCHING</small></div>
+      <div class="project-card-body">
+        <div class="project-top"><span>FULL-STACK COMMUNITY MARKETPLACE</span><span>08</span></div>
+        <h3>Food Donation</h3>
+        <p class="project-intro">A MERN application that helps food donors list surplus food so people who need it can discover and claim available donations.</p>
+        <div class="project-details stacked"><section><small>PROBLEM / CONTEXT</small><p>Potentially useful food can go unused when donors and recipients have no simple way to find available items nearby.</p></section><section><small>IMPLEMENTATION</small><p>Built donation posting and listing workflows with quantity, location and description fields, plus real-time updates and form validation.</p></section></div>
+        <div class="feature-list"><small>KEY FEATURES</small><ul><li>Post food donations with quantity and location</li><li>Browse available donations and request or claim items</li><li>Real-time listing updates</li><li>Responsive interface and form validation</li></ul></div>
+        <div class="compact-meta"><div><small>TECHNOLOGY</small><div class="tags"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div></div><div><small>MY ROLE / PROJECT CONTEXT</small><p>Individual repository project.</p><small class="learn-label">ENGINEERING TAKEAWAY</small><p>Location and availability details are central to making a donation listing actionable.</p></div></div>
+        <div class="project-actions"><a class="project-btn project-btn-secondary" href="https://github.com/charanteja7725/fooddonation" target="_blank" rel="noreferrer">GitHub repository <b>↗</b></a></div>
+      </div>
+    </article>
+
+    <article class="project-card-enhanced glass-card tilt" tabindex="0">
+      <div class="project-card-visual api-visual" aria-hidden="true"><span>09 / BACKEND API</span><div class="project-symbol">API</div><b>NoSQL CRUD API</b><small>DOCUMENTED REST SERVICE</small></div>
+      <div class="project-card-body">
+        <div class="project-top"><span>BACKEND API</span><span>09</span></div>
+        <h3>NoSQL CRUD API</h3>
+        <p class="project-intro">A MongoDB-backed REST API for creating, reading, updating and deleting user records.</p>
+        <div class="project-details stacked"><section><small>PROBLEM / CONTEXT</small><p>A compact API project needs predictable validation, error responses and a clear way for developers to explore endpoints.</p></section><section><small>IMPLEMENTATION</small><p>Built an Express API with centralized error handling and Swagger documentation, with a Postman collection for manual request checks.</p></section></div>
+        <div class="feature-list"><small>KEY FEATURES</small><ul><li>Create, list, read, update and delete user records</li><li>Swagger UI for endpoint schemas and response codes</li><li>Postman collection for CRUD requests</li><li>Live Render API and API documentation</li></ul></div>
+        <div class="compact-meta"><div><small>TECHNOLOGY</small><div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Swagger</span><span>Postman</span></div></div><div><small>MY ROLE / PROJECT CONTEXT</small><p>Individual backend project.</p><small class="learn-label">ENGINEERING TAKEAWAY</small><p>Readable API documentation and consistent error handling make a small service easier to test and integrate.</p></div></div>
+        <div class="project-actions"><a class="project-btn project-btn-primary" href="https://nosql-api-5.onrender.com/" target="_blank" rel="noreferrer">Live API <b>↗</b></a><a class="project-btn project-btn-secondary" href="https://nosql-api-5.onrender.com/api-docs" target="_blank" rel="noreferrer">API docs <b>↗</b></a><a class="project-btn project-btn-secondary" href="https://github.com/charanteja7725/nosqL-api" target="_blank" rel="noreferrer">GitHub repository <b>↗</b></a></div>
+      </div>
+    </article>
+
+    <article class="project-card-enhanced glass-card tilt" tabindex="0">
+      <div class="project-card-visual tata-visual" aria-hidden="true"><span>10</span><div class="tata-mark">1mg</div><div class="tata-flow"><i></i><i></i><i></i><i></i></div><b>KALVIUM</b><small>COLLABORATIVE PROJECT</small></div>
+      <div class="project-card-body">
+        <div class="project-top"><span>TEAM PROJECT</span><span>10</span></div>
         <h3>Tata 1mg</h3>
         <p class="project-intro">A Kalvium collaborative project where my main contribution was on the backend/API side, alongside a team working across application components.</p>
         <div class="project-details stacked"><section><small>PROBLEM</small><p>A medicine-ordering platform needs coordinated application workflows — not just product display — including authentication, APIs, order handling and integration.</p></section><section><small>WHAT HAPPENED</small><p>The first version was rejected during review. We analysed feedback, incorporated mentor suggestions and new ideas, debugged integration issues and rebuilt the submission.</p></section></div>
